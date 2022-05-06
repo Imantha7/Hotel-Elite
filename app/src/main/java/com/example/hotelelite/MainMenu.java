@@ -10,6 +10,8 @@ import android.view.View;
 //import com.example.hotelelite.activities.food.FoodReservation;
 //import com.example.hotelelite.activities.hall.HallReservation;
 //import com.example.hotelelite.activities.room.RoomReservation;
+import com.example.hotelelite.activities.food.FoodReservation;
+import com.example.hotelelite.activities.room.RoomReservation;
 import com.example.hotelelite.utils.UserUtils;
 
 public class MainMenu extends AppCompatActivity {
@@ -37,8 +39,8 @@ public class MainMenu extends AppCompatActivity {
     }
 
     public void roomRes(View view) {
-//        Intent i = new Intent(getApplicationContext(), RoomReservation.class);
-//        startActivity(i);
+        Intent i = new Intent(getApplicationContext(), RoomReservation.class);
+        startActivity(i);
     }
 
     public void hallRes(View view) {
@@ -47,8 +49,8 @@ public class MainMenu extends AppCompatActivity {
     }
 
     public void foodRes(View view) {
-//        Intent i = new Intent(getApplicationContext(), FoodReservation.class);
-//        startActivity(i);
+        Intent i = new Intent(getApplicationContext(), FoodReservation.class);
+        startActivity(i);
     }
 
     public void eventRes(View view) {
