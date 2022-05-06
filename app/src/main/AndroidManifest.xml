@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hotelelite" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HotelElite" >
+        <activity
+            android:name=".activities.event.EventResDetails"
+            android:exported="false" />
+        <activity
+            android:name=".activities.event.CreateEventRes"
+            android:exported="false" />
+        <activity
+            android:name=".activities.event.EventReservation"
+            android:exported="false" />
+        <activity
+            android:name=".activities.food.EditFoodRes"
+            android:exported="false" />
+        <activity
+            android:name=".activities.food.FoodResDetails"
+            android:exported="false" />
+        <activity
+            android:name=".activities.food.CreateFoodRes"
+            android:exported="false"
+            android:label="Food Reservations" />
+        <activity
+            android:name=".activities.food.FoodReservation"
+            android:exported="false"
+            android:label="Food Reservations" />
+        <activity
+            android:name=".activities.hall.EditHallRes"
+            android:exported="false"
+            android:label="Hall Reservations" />
+        <activity
+            android:name=".activities.hall.HallResDetails"
+            android:exported="false"
+            android:label="Hall Reservations" />
+        <activity
+            android:name=".activities.hall.CreateHallRes"
+            android:exported="false"
+            android:label="Hall Reservations" />
+        <activity
+            android:name=".activities.hall.HallReservation"
+            android:exported="false"
+            android:label="Hall Reservations" />
+        <activity
+            android:name=".activities.room.EditRoomRes"
+            android:exported="false"
+            android:label="Room Reservations" />
+        <activity
+            android:name=".activities.room.RoomResDetails"
+            android:exported="false"
+            android:label="Room Reservations" />
+        <activity
+            android:name=".activities.room.CreateRoomRes"
+            android:exported="false"
+            android:label="Room Reservations" />
+        <activity
+            android:name=".activities.room.RoomReservation"
+            android:exported="false"
+            android:label="Room Reservations" />
+        <activity
+            android:name=".RegisterPage"
+            android:exported="false"
+            android:label="Register Page" />
+        <activity
+            android:name=".MainMenu"
+            android:exported="false"
+            android:label="Main Menu" />
+        <activity
+            android:name=".Login"
+            android:exported="true"
+            android:label="Login Page" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
