@@ -107,7 +107,7 @@ public class EventResDetails extends AppCompatActivity {
             collectDecorations += "Fabric = Rs.7500\n ";
         } if (stageDesign){
             decoration += 10000;
-            collectDecorations += "Fabric = Rs.10000\n ";
+            collectDecorations += "Stage Design = Rs.10000\n ";
         } if (!flower && !fabric && !stageDesign){
             collectDecorations += "Not Selected";
         }

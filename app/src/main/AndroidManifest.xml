@@ -9,11 +9,37 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HotelElite" >
         <activity
+            android:name=".EditProfile"
+            android:exported="false"
+            android:label="User Profile"/>
+        <activity
+            android:name=".UserProfile"
+            android:exported="false"
+            android:label="User Profile"/>
+        <activity
+            android:name=".activities.event.EditEventRes"
+            android:exported="false"
+            android:label="Event Reservations"/>
+        <activity
+            android:name=".activities.event.EventResDetails"
+            android:exported="false"
+            android:label="Event Reservations"/>
+        <activity
+            android:name=".activities.event.CreateEventRes"
+            android:exported="false"
+            android:label="Event Reservations"/>
+        <activity
+            android:name=".activities.event.EventReservation"
+            android:exported="false"
+            android:label="Event Reservations"/>
+        <activity
             android:name=".activities.food.EditFoodRes"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Food Reservations"/>
         <activity
             android:name=".activities.food.FoodResDetails"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Food Reservations"/>
         <activity
             android:name=".activities.food.CreateFoodRes"
             android:exported="false"
@@ -65,7 +91,7 @@
         <activity
             android:name=".Login"
             android:exported="true"
-            android:label="Login Page" >
+            android:label="Login Page">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

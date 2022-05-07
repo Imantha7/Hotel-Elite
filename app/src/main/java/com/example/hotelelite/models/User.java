@@ -1,7 +1,5 @@
 package com.example.hotelelite.models;
 
-import java.util.Date;
-
 public class User {
 
     private String id;

@@ -14,7 +14,6 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.hotelelite.R;
-
 import com.example.hotelelite.models.Food;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.firestore.DocumentReference;
@@ -48,9 +47,9 @@ public class FoodResAdapter extends RecyclerView.Adapter<FoodResAdapter.ViewHold
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        Food hall = (Food) resCardList.get(position);
+        Food food = (Food) resCardList.get(position);
 
-        DocumentReference documentReference = db.collection("foodReservations").document(hall.getId());
+        DocumentReference documentReference = db.collection("foodReservations").document(food.getId());
         @SuppressLint("SimpleDateFormat") DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm");
         documentReference.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
             @Override
@@ -81,7 +80,7 @@ public class FoodResAdapter extends RecyclerView.Adapter<FoodResAdapter.ViewHold
                         holder.image.setImageDrawable(context.getResources().getDrawable(R.drawable.string_hoppers));
                 }
                 @SuppressLint("SimpleDateFormat") DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm");
-                holder.hallType.setText(data.getFoodType());
+                holder.foodType.setText(data.getFoodType());
                 holder.resDateRange.setText(dateFormat.format(data.getOrderTime()) + "\n" + dateFormat.format(data.getDeliveryTime()));
                 holder.totalAmount.setText("Rs." + data.getTotalAmount());
 
@@ -111,7 +110,7 @@ public class FoodResAdapter extends RecyclerView.Adapter<FoodResAdapter.ViewHold
 
     public class ViewHolder extends RecyclerView.ViewHolder {
 
-        TextView hallType, resDateRange, totalAmount;
+        TextView foodType, resDateRange, totalAmount;
         ImageView image;
         Button seeMoreBtn;
 
@@ -119,7 +118,7 @@ public class FoodResAdapter extends RecyclerView.Adapter<FoodResAdapter.ViewHold
         public ViewHolder(View itemView) {
             super(itemView);
             image = itemView.findViewById(R.id.type_image);
-            hallType = itemView.findViewById(R.id.type);
+            foodType = itemView.findViewById(R.id.type);
             resDateRange = itemView.findViewById(R.id.res_date_range);
             totalAmount = itemView.findViewById(R.id.total_amount);
             seeMoreBtn = itemView.findViewById(R.id.see_more);
