@@ -9,13 +9,14 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/room_reservation"
+        android:background="@drawable/food_reservation"
         android:scaleX="2.2" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginHorizontal="10dp"
+        android:padding="10dp"
+        android:background="@drawable/background_dark_shadow"
         android:orientation="vertical">
 
         <LinearLayout

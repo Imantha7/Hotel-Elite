@@ -1,16 +1,14 @@
 package com.example.hotelelite;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-//import com.example.hotelelite.activities.event.EventReservation;
-//import com.example.hotelelite.activities.food.FoodReservation;
-//import com.example.hotelelite.activities.hall.HallReservation;
-//import com.example.hotelelite.activities.room.RoomReservation;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.hotelelite.activities.event.EventReservation;
 import com.example.hotelelite.activities.food.FoodReservation;
+import com.example.hotelelite.activities.hall.HallReservation;
 import com.example.hotelelite.activities.room.RoomReservation;
 import com.example.hotelelite.utils.UserUtils;
 
@@ -44,8 +42,8 @@ public class MainMenu extends AppCompatActivity {
     }
 
     public void hallRes(View view) {
-//        Intent i = new Intent(getApplicationContext(), HallReservation.class);
-//        startActivity(i);
+        Intent i = new Intent(getApplicationContext(), HallReservation.class);
+        startActivity(i);
     }
 
     public void foodRes(View view) {
@@ -54,7 +52,12 @@ public class MainMenu extends AppCompatActivity {
     }
 
     public void eventRes(View view) {
-//        Intent i = new Intent(getApplicationContext(), EventReservation.class);
-//        startActivity(i);
+        Intent i = new Intent(getApplicationContext(), EventReservation.class);
+        startActivity(i);
+    }
+
+    public void goToProfile(View view) {
+        Intent i = new Intent(getApplicationContext(), UserProfile.class);
+        startActivity(i);
     }
 }

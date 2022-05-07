@@ -1,7 +1,5 @@
 package com.example.hotelelite.activities.food;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
 import android.content.Intent;
@@ -14,6 +12,8 @@ import android.widget.DatePicker;
 import android.widget.LinearLayout;
 import android.widget.TimePicker;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.hotelelite.R;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -60,6 +60,7 @@ public class EditFoodRes extends AppCompatActivity {
         contactNumInput = findViewById(R.id.contact_number);
         orderTimeInput = findViewById(R.id.order_time);
 
+        //get data in previous intent
         id = getIntent().getStringExtra("id");
         foodType = getIntent().getStringExtra("foodType");
         quantity = getIntent().getLongExtra("quantity", 0);
