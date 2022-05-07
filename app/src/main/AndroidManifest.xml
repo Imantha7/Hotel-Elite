@@ -9,15 +9,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HotelElite" >
         <activity
-            android:name=".activities.event.EventResDetails"
-            android:exported="false" />
-        <activity
-            android:name=".activities.event.CreateEventRes"
-            android:exported="false" />
-        <activity
-            android:name=".activities.event.EventReservation"
-            android:exported="false" />
-        <activity
             android:name=".activities.food.EditFoodRes"
             android:exported="false" />
         <activity
