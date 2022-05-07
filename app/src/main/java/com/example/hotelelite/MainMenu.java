@@ -6,9 +6,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.hotelelite.activities.event.EventReservation;
+//import com.example.hotelelite.activities.event.EventReservation;
+//import com.example.hotelelite.activities.food.FoodReservation;
+//import com.example.hotelelite.activities.hall.HallReservation;
+//import com.example.hotelelite.activities.room.RoomReservation;
 import com.example.hotelelite.activities.food.FoodReservation;
-import com.example.hotelelite.activities.hall.HallReservation;
 import com.example.hotelelite.activities.room.RoomReservation;
 import com.example.hotelelite.utils.UserUtils;
 
@@ -36,23 +38,23 @@ public class MainMenu extends AppCompatActivity {
         startActivity(startMain);
     }
 
-//    public void roomRes(View view) {
-//        Intent i = new Intent(getApplicationContext(), RoomReservation.class);
-//        startActivity(i);
-//    }
+    public void roomRes(View view) {
+        Intent i = new Intent(getApplicationContext(), RoomReservation.class);
+        startActivity(i);
+    }
 
-//    public void hallRes(View view) {
+    public void hallRes(View view) {
 //        Intent i = new Intent(getApplicationContext(), HallReservation.class);
 //        startActivity(i);
-//    }
+    }
 
     public void foodRes(View view) {
         Intent i = new Intent(getApplicationContext(), FoodReservation.class);
         startActivity(i);
     }
 
-//    public void eventRes(View view) {
+    public void eventRes(View view) {
 //        Intent i = new Intent(getApplicationContext(), EventReservation.class);
 //        startActivity(i);
-//    }
+    }
 }
