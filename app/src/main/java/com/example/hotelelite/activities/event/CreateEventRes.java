@@ -152,6 +152,7 @@ public class CreateEventRes extends AppCompatActivity {
         eventType = "DJ Party";
     }
 
+    //data pass to reservation details view
     public void reservation(View view) {
 
         if (TextUtils.isEmpty(eventType)) {
