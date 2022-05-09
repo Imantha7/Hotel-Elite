@@ -51,6 +51,7 @@ public class EventReservation extends AppCompatActivity {
         getEventReservation(mAuth.getCurrentUser().getUid());
     }
 
+    //get all data in uniqe person
     private void getEventReservation(String currentUser) {
         db.collection("eventReservations")
                 .whereEqualTo("userId", currentUser)
