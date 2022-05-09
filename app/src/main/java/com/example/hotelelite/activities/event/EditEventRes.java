@@ -218,6 +218,7 @@ public class EditEventRes extends AppCompatActivity {
         }
     }
 
+    //event data delete
     public void deleteRes(View view) {
 
         DocumentReference documentReference = db.collection("eventReservations").document(id);
