@@ -178,6 +178,7 @@ public class EventResDetails extends AppCompatActivity {
         });
     }
 
+    //update event servise details
     private void updateRoomReservation(Event event) throws ParseException {
 
         Map<String, Object> data = new HashMap<>();
